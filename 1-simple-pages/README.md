@@ -1,0 +1,5 @@
+- A gallery page with an Instagram-like layout
+- Images will be retrieved from the following source:
+    - https://picsum.photos/v2/list
+- Use React for development
+- Click on the image to enlarge
