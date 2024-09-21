@@ -1,7 +1,7 @@
 # Generate command
 
 ```bash
-sisho make infrastructure/index.js usecase/index.js command/index.js -a
+sisho make infrastructure/index.js usecase/index.js command/index.js usecase/index.spec.js -a
 ```
 
 ```bash
