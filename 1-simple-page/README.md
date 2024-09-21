@@ -4,7 +4,9 @@
 sisho make index.html index.js index.css -a
 ```
 
-# Page Specifications
+Open [index.html](./index.html) in your browser.
+
+# Page Specification
 
 - A gallery page with an Instagram-like layout.
 - Theme

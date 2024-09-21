@@ -1,0 +1,5 @@
+knowledge:
+    - path: package.json
+      kind: dependencies
+    - path: .nodenv
+      kind: dependencies
