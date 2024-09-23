@@ -24,13 +24,13 @@ export ANTHROPIC_API_KEY="YOUR_API_KEY"
 sisho make models/todo.js usecases/getTodos/index.js usecases/postTodo/index.js server/index.js -a
 ````
 
-Boot the DB.
+Run the DB.
 
 ```bash
 docker run --name sisho-demo-db -e POSTGRES_PASSWORD=test -v ./init.sql:/docker-entrypoint-initdb.d/init.sql -d -p 5432:5432 postgres
 ```
 
-Boot the server.
+Run the server.
 
 ```bash
 node server/index.js
@@ -53,7 +53,7 @@ curl -X POST 'http://localhost:3000/todos' -H 'Content-Type: application/json' -
 }'
 ```
 
-Delete the DB.
+Stop & delete the DB.
 
 ```bash
 docker rm -f sisho-demo-db
