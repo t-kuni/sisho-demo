@@ -1,0 +1,124 @@
+openapi: 3.1.0
+x-stoplight:
+  id: vsh36vq1irns2
+info:
+  title: open-api
+  version: '1.0'
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /todos:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  todos:
+                    type: array
+                    x-stoplight:
+                      id: ckm3dycitvdqu
+                    items:
+                      $ref: '#/components/schemas/Todo'
+                      x-stoplight:
+                        id: dar183njnlitb
+                  page:
+                    type: integer
+                    x-stoplight:
+                      id: uuwzkl58v6pqg
+                  maxPage:
+                    type: integer
+                    x-stoplight:
+                      id: f3xdw9uk3ehyp
+                required:
+                  - todos
+                  - page
+                  - maxPage
+      operationId: get-todos
+      requestBody:
+        content: {}
+      parameters:
+        - schema:
+            type: integer
+          in: query
+          name: page
+        - schema:
+            type: integer
+          in: query
+          name: countParPage
+        - schema:
+            type: string
+          in: query
+          name: query
+          description: Search for partial matches of title and description.
+    post:
+      summary: ''
+      operationId: post-todos
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  todo:
+                    $ref: '#/components/schemas/Todo'
+                    x-stoplight:
+                      id: zp6x8pxqql46t
+                required:
+                  - todo
+      description: 'If no ID is specified, a new one will be created; if an ID is specified, an update will be performed.'
+components:
+  schemas:
+    User:
+      title: User
+      type: object
+      examples:
+        - id: 142
+          firstName: Alice
+          lastName: Smith
+          email: alice.smith@gmail.com
+          dateOfBirth: '1997-10-31'
+          emailVerified: true
+          signUpDate: '2019-08-24'
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+          x-stoplight:
+            id: k6y9l34co7e61
+      required:
+        - id
+        - name
+    Todo:
+      title: Todo
+      x-stoplight:
+        id: ju0oid2ltb8jv
+      type: object
+      properties:
+        id:
+          format: uuid
+          type:
+            - string
+            - 'null'
+          readOnly: true
+        title:
+          type: string
+          x-stoplight:
+            id: sx86i58ikbr6n
+        description:
+          type: string
+          x-stoplight:
+            id: a4iu9gkxiscu6
+      required:
+        - id
+        - title
+        - description

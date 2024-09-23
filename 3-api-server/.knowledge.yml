@@ -1,0 +1,9 @@
+knowledge:
+    - path: open-api.yaml
+      kind: specifications
+    - path: init.sql
+      kind: specifications
+    - path: package.json
+      kind: dependencies
+    - path: .nodenv
+      kind: dependencies
