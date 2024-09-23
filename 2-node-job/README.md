@@ -1,15 +1,30 @@
-# Generate command
+# Node.js Job Demo
+
+This demo generates code to execute a job in Node.js. The code is generated according to the specifications at the bottom of this page. You can get different results by modifying the specifications and generating the code again.
+
+# Usage
+
+Install the [Sisho](https://github.com/t-kuni/sisho).
 
 ```bash
+GOPROXY=direct go install github.com/t-kuni/sisho@master
+````
+
+Generate codes.
+
+```bash
+export ANTHROPIC_API_KEY="YOUR_API_KEY"
 sisho make infrastructure/index.js usecase/index.js command/index.js usecase/index.spec.js -a
 ```
+
+Run the job.
 
 ```bash
 npm install
 node command/index.js 5 90
 ```
 
-# Command Specification
+# Job Specification
 
 ```
 node command/index.js [IMAGE_COUNT] [ANGLE]

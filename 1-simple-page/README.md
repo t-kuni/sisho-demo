@@ -1,6 +1,19 @@
-# Generate command
+# Simple Page Demo
+
+This demo generates a page composed of HTML, CSS, and JS. The code is generated according to the specifications at the bottom of this page. You can get different results by modifying the specifications and generating the code again.
+
+# Usage
+
+Install the [Sisho](https://github.com/t-kuni/sisho).
 
 ```bash
+GOPROXY=direct go install github.com/t-kuni/sisho@master
+````
+
+Generate codes.
+
+```bash
+export ANTHROPIC_API_KEY="YOUR_API_KEY"
 sisho make index.html index.js index.css -a
 ```
 
