@@ -33,7 +33,7 @@ docker run --name sisho-demo-db -e POSTGRES_PASSWORD=test -v ./init.sql:/docker-
 Boot the server.
 
 ```bash
-node index.js
+node server/index.js
 ```
 
 Access the server.
