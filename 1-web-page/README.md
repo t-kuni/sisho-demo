@@ -1,4 +1,4 @@
-# Simple Page Demo
+# Web Page Demo
 
 This demo generates a page composed of HTML, CSS, and JS. The code is generated according to the specifications at the bottom of this page. You can get different results by modifying the specifications and generating the code again.
 
