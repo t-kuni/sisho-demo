@@ -11,7 +11,7 @@ git clone git@github.com:t-kuni/sisho-demo.git
 cd sisho-demo/3-api-server
 ```
 
-Install the [Sisho](https://github.com/t-kuni/sisho).
+Install the [Sisho](https://github.com/t-kuni/sisho). (Required [Golang](https://go.dev/doc/install))
 
 ```bash
 GOPROXY=direct go install github.com/t-kuni/sisho@master
