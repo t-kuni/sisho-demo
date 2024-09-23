@@ -1,4 +1,4 @@
-# 
+# Usage
 
 ```bash
 docker run --name sisho-demo-db -e POSTGRES_PASSWORD=test -v ./init.sql:/docker-entrypoint-initdb.d/init.sql -d -p 5432:5432 postgres
@@ -34,5 +34,15 @@ curl -X POST 'http://localhost:3000/todos' -H 'Content-Type: application/json' -
   * Routing
 * usecases
   * Business logic
+  * Depends on infrastructure via DI
+* infrastructure
+  * External communication
 * models
   * Models corresponding to tables
+
+# For Development
+
+```
+docker logs sisho-demo-db
+docker exec -it sisho-demo-db psql -U postgres -c "\dt"
+```

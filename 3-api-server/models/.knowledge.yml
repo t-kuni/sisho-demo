@@ -1,0 +1,3 @@
+knowledge:
+    - path: ../infrastructures/dbConnection/index.js
+      kind: implementations

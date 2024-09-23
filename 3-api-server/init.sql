@@ -1,10 +1,10 @@
-CREATE TABLE Todo (
+CREATE TABLE todos (
       id UUID PRIMARY KEY,
       title VARCHAR(255) NOT NULL,
       description TEXT NOT NULL
 );
 
-INSERT INTO Todo (id, title, description) VALUES
+INSERT INTO todos (id, title, description) VALUES
      ('f48a1a55-8db0-4f2b-a31f-11b8a6e04d57', 'Buy groceries', 'Need to buy milk, bread, and eggs'),
      ('bc8bca78-98a3-4c1f-bc38-8e9b68dbfa63', 'Finish project', 'Complete the presentation for the project'),
      ('de6a8a2f-9b4d-4a5e-8cde-14e8f49d2f7d', 'Clean the house', 'Do a thorough cleaning of the living room'),
