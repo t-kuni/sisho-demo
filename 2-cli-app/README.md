@@ -1,6 +1,6 @@
-# Node.js Job Demo
+# Cli App Demo
 
-This demo generates code to execute a job in Node.js. The code is generated according to the specifications at the bottom of this page. You can get different results by modifying the specifications and generating the code again.
+This demo creates a CLI application (Job) that runs on Node. The code is generated according to the specifications at the bottom of this page. You can get different results by modifying the specifications and generating the code again.
 
 # Usage
 
