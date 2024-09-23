@@ -1,4 +1,4 @@
-# Api Server Generation Demo
+# API Server Generation Demo
 
 This demo generates code to start an API Server in Node.js. It generates API and DB access code based on [open-api.yaml](./open-api.yaml) and [init.sql](./init.sql). You can get different results by modifying the specifications and generating the code again.
 
