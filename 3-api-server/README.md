@@ -4,6 +4,13 @@ This demo generates code to start an API Server in Node.js. It generates API and
 
 # Usage
 
+Clone the repository.
+
+```bash
+git clone git@github.com:t-kuni/sisho-demo.git
+cd sisho-demo/3-api-server
+```
+
 Install the [Sisho](https://github.com/t-kuni/sisho).
 
 ```bash

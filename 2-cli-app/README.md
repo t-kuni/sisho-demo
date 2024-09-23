@@ -4,6 +4,13 @@ This demo creates a CLI application (Job) that runs on Node. The code is generat
 
 # Usage
 
+Clone the repository.
+
+```bash
+git clone git@github.com:t-kuni/sisho-demo.git
+cd sisho-demo/2-cli-app
+```
+
 Install the [Sisho](https://github.com/t-kuni/sisho).
 
 ```bash

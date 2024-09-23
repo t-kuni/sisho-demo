@@ -4,6 +4,13 @@ This demo generates a page composed of HTML, CSS, and JS. The code is generated 
 
 # Usage
 
+Clone the repository.
+
+```bash
+git clone git@github.com:t-kuni/sisho-demo.git
+cd sisho-demo/1-web-page
+```
+
 Install the [Sisho](https://github.com/t-kuni/sisho).
 
 ```bash
