@@ -14,7 +14,7 @@ cd sisho-demo/2-cli-app
 Install the [Sisho](https://github.com/t-kuni/sisho). (required [Golang](https://go.dev/doc/install))
 
 ```bash
-GOPROXY=direct go install github.com/t-kuni/sisho@master
+go install github.com/t-kuni/sisho@v0.1.0
 ````
 
 Generate codes.
